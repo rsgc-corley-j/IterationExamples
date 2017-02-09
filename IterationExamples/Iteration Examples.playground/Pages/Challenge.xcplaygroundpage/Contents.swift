@@ -15,7 +15,22 @@ import PlaygroundSupport
 let canvas = Canvas(width: 300, height: 300)
 
 // Below this line, try combining a loop and four statements that draw lines to generate the goal
+//for value in 1...4{
+    
+//}
 
+for x in stride(from: 0, through: 300, by: 20){
+    x
+    canvas.drawLine(fromX: x, fromY: 0, toX: 300, toY: x, lineWidth: 1)
+}
+    for x in stride(from: 0, through: 300, by: 20){
+        x
+        canvas.drawLine(fromX: x, fromY: 300, toX: 0, toY: x, lineWidth: 1)
+}
+for x in stride(from: 0, through: 300, by: 20){
+    x
+    canvas.drawLine(fromX: 300, fromY: x, toX: x, toY: 0, lineWidth: 1)
+}
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
