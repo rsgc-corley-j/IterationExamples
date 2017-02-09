@@ -29,10 +29,14 @@ for x in stride(from: 0, through: 300, by: 20){
 }
 //for y in stride(from: 0, through: 300, by: 20){
 for x in stride(from: 300, through: 0, by: -20){
-    
+    x
     canvas.drawLine(fromX: 300-x, fromY: 0, toX: 0, toY: x, lineWidth: 1)
 }
 //}
+for x in stride(from: 300, through: 0, by: -20){
+    x
+    canvas.drawLine(fromX: 300, fromY: 300-x, toX: x, toY: 300, lineWidth: 1)
+}
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
